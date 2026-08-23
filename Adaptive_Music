@@ -1,0 +1,223 @@
+#ADAPTIVE MUSIC RECOMMENDATION SYSTEM
+# Name: Sophia Velasquez Plariza
+# Section: CS4D
+# Date: August 24, 2026
+#
+# RULE 1:
+# If the user skips songs frequently
+# → Then recommend shorter songs.
+#
+# RULE 2:
+# If the user listens to one genre repeatedly
+# → Then recommend more songs from that genre.
+#
+# Explanation:
+# These rules personalize the music experience based on
+# the user's listening behavior. The system changes its
+# recommendations depending on what the user does.
+
+
+
+# Music recommendations
+
+
+music = {
+    "Pop": [
+        "Espresso - Sabrina Carpenter",
+        "Cruel Summer - Taylor Swift",
+        "APT. - ROSÉ & Bruno Mars",
+        "Good 4 U - Olivia Rodrigo"
+    ],
+
+    "K-Pop": [
+        # Hearts2Hearts
+        "The Chase - Hearts2Hearts",
+        "STYLE - Hearts2Hearts",
+        "FOCUS - Hearts2Hearts",
+        "RUDE - Hearts2Hearts",
+        "Pretty Please - Hearts2Hearts",
+
+        # IZ*ONE
+        "Panorama - IZ*ONE",
+        "La Vie en Rose - IZ*ONE",
+        "Fiesta - IZ*ONE",
+        "Secret Story of Swan - IZ*ONE",
+
+        #IVE 
+        "BANGBANG - IVE",
+        "LOVE DIVE - IVE",
+        "ELEVEN - IVE",
+        "I AM - IVE",
+        "Baddie - IVE",
+
+
+        # BLACKPINK
+        "DDU-DU DDU-DU - BLACKPINK",
+        "How You Like That - BLACKPINK",
+        "Lovesick Girls - BLACKPINK",
+        "As If It's Your Last - BLACKPINK",
+
+        # tripleS
+        "Girls Never Die - tripleS",
+        "Generation - tripleS",
+        "Rising - tripleS",
+        "Are you Alive - triples",
+
+
+        # LE SSERAFIM
+        "ANTIFRAGILE - LE SSERAFIM",
+        "EASY - LE SSERAFIM",
+        "Perfect Night - LE SSERAFIM",
+        "FEARLESS - LE SSERAFIM",
+
+        # Red Velvet
+        "Psycho - Red Velvet",
+        "Feel My Rhythm - Red Velvet",
+        "Bad Boy - Red Velvet",
+        "Russian Roulette - Red Velvet",
+
+        # aespa
+        "Supernova - aespa",
+        "Drama - aespa",
+        "Spicy - aespa",
+        "Next Level - aespa"
+        "Whiplash - aespa",
+    ],
+
+    "R&B": [
+        "Snooze - SZA",
+        "Best Part - Daniel Caesar",
+        "Love Galore - SZA",
+        "Get You - Daniel Caesar"
+    ],
+
+    "Rock": [
+        "The Pretender - Foo Fighters",
+        "Boulevard of Broken Dreams - Green Day",
+        "Bring Me To Life - Evanescence",
+        "Numb - Linkin Park"
+    ]
+}
+
+
+# Display available genres
+
+
+print("   ADAPTIVE MUSIC RECOMMENDATION")
+
+print("\nAvailable Genres:")
+print("1. Pop")
+print("2. K-Pop")
+print("3. R&B")
+print("4. Rock")
+
+
+# Get user's information
+
+
+try:
+
+    skip_rate = float(
+        input("\nEnter your song skip rate (0-100%): ")
+    )
+
+    genre_choice = input(
+        "Enter your preferred genre: "
+    ).strip().lower()
+
+
+    # Convert user's genre input
+
+
+    genres = {
+        "pop": "Pop",
+        "k-pop": "K-Pop",
+        "kpop": "K-Pop",
+        "r&b": "R&B",
+        "rnb": "R&B",
+        "rock": "Rock"
+    }
+
+    selected_genre = genres.get(genre_choice)
+
+
+    # Check if skip rate is valid
+
+
+    if skip_rate < 0 or skip_rate > 100:
+
+        print("\nInvalid skip rate.")
+        print("Please enter a value between 0 and 100.")
+
+    else:
+
+      
+        print("       PERSONALIZED RESULTS")
+       
+        # RULE 1
+        #
+        # If the user skips songs frequently
+        # → Then recommend shorter songs.
+        #
+        # We consider 50% or higher as
+        # frequent skipping.
+
+        if skip_rate >= 50:
+
+            print("\nRULE 1 ACTIVATED")
+            print("You frequently skip songs.")
+            print("Action: Recommend shorter songs.")
+            print(
+                "Reason: You skip many songs, so shorter "
+                "tracks may better match your listening behavior."
+            )
+
+        else:
+
+            print("\nRULE 1 NOT ACTIVATED")
+            print("You do not frequently skip songs.")
+            print("Action: You can explore different songs.")
+
+ 
+        # RULE 2
+        #
+        # If the user listens to one genre
+        # repeatedly
+        # → Then recommend more songs
+        # from that genre.
+
+        if selected_genre:
+
+            print("\nRULE 2 ACTIVATED")
+            print("Preferred Genre:", selected_genre)
+            print(
+                "Action: Recommend more "
+                + selected_genre
+                + " songs."
+            )
+            print(
+                "Reason: You frequently listen to "
+                + selected_genre
+                + ", so the system recommends more "
+                "songs from this genre."
+            )
+
+
+            # Show recommendations
+
+            print("\nRecommended Songs:")
+
+            for song in music[selected_genre]:
+                print("🎵", song)
+
+        else:
+
+            print("\nRULE 2 NOT ACTIVATED")
+            print("The genre was not recognized.")
+            print("Action: Explore different genres.")
+
+
+except ValueError:
+
+    print("\nInvalid input.")
+    print("Please enter a number for the skip rate.")
