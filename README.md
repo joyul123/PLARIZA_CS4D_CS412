@@ -47,3 +47,15 @@ from that preferred genre.
 Reason: Repeatedly listening to a specific genre indicates that the
 user may enjoy that type of music. Recommending more songs from the genre
 creates a more personalized listening experience.
+
+Personalization Explanation
+
+The system improves personalization by observing the user's listening
+behavior instead of providing the same recommendations to everyone.
+
+For example, a user who frequently skips songs will receive different
+recommendations from a user who rarely skips songs. Similarly, a user who
+frequently listens to K-pop will receive more K-pop recommendations.
+
+This makes the music application more responsive to individual user
+preferences and can improve user satisfaction.
