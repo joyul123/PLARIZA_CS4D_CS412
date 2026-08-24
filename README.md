@@ -12,7 +12,7 @@ experience based on observed behaviors or preferences.
 2. Based on your chosen domain, write two adaptation rules using this format:
 If [condition based on user behavior] → Then [adaptive action by the system].
 3. Explain why your rule would improve personalization and user experience.
-
+![Alt text](https://github.com/joyul123/PLARIZA_CS4D_CS412/blob/main/Screenshot%202026-08-23%20230428.png?raw=true)
 
 
 Submission Guidelines
