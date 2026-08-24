@@ -18,6 +18,7 @@ Grading
 ​• See the rubric in the module for details.
 
 Adaptive Music Recommendation System
+
 Description
 
 The Adaptive Music Recommendation System is a Python command-line
