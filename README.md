@@ -1,4 +1,4 @@
-# PLARIZA_CS4D_CS412
+# PLARIZA_ACTIVITY 2_CS412
 Name: SOPHIA V. PLARIZA                                                                                                       
 Section: CS4D
 DATE: AUGUST 24,2026
