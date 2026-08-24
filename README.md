@@ -1,25 +1,16 @@
 # PLARIZA_CS4D_CS412
-Activity: Build a Simple Adaptive Rule
+SOPHIA V. PLARIZA                                                                                                        AUGUST 24,2026
+CS4D
 Instructions
-Create simple if–then rules that an adaptive system can use to personalize the user
-experience based on observed behaviors or preferences.
-1. Think of an application domain (choose one):
-○ E-learning platform
-○ Music streaming app
-○ E-commerce site
-○ Fitness tracking app
-○ or choose another application domain
-2. Based on your chosen domain, write two adaptation rules using this format:
-If [condition based on user behavior] → Then [adaptive action by the system].
-3. Explain why your rule would improve personalization and user experience.
-![Alt text](https://github.com/joyul123/PLARIZA_CS4D_CS412/blob/main/Screenshot%202026-08-23%20230428.png?raw=true)
-![Alt text](https://github.com/joyul123/PLARIZA_CS4D_CS412/blob/main/Screenshot%202026-08-23%20230519.png?raw=true)
+Implement two if–then adaptive rules in code for an application of your choice (e-learning, music, e-commerce, or fitness). You may choose any programming language. Adding a User Interface (UI) is optional; a console or command-line program is fully acceptable.
 
-Submission Guidelines
-1. Write your answers, whether written or computerized, and follow a proper format:
-a. Justify your answers with 1.0 spacing.
-b. In top-left should be your name and section and on the top-right should be the
-date.
+​In your code comments or a brief README.md file, explain how your rules improve personalization and user experience.
 
-2. Save it in PDF format and rename the file into “Lastname_Activity2_CS412”.
-3. Submit it on or before 12MN today.
+​Required Logic Format:
+​Rule 1: If [condition] → Then [action]
+​Rule 2: If [condition] → Then [action]
+​Explanation: Short write-up of the personalization logic.
+​
+Grading
+• ​Total: 20 points (Accuracy, Relevance, Impact, Creativity)
+​• See the rubric in the module for details.
