@@ -13,7 +13,7 @@ experience based on observed behaviors or preferences.
 If [condition based on user behavior] → Then [adaptive action by the system].
 3. Explain why your rule would improve personalization and user experience.
 ![Alt text](https://github.com/joyul123/PLARIZA_CS4D_CS412/blob/main/Screenshot%202026-08-23%20230428.png?raw=true)
-
+![Alt text](https://github.com/joyul123/PLARIZA_CS4D_CS412/blob/main/Screenshot%202026-08-23%20230519.png?raw=true)
 
 Submission Guidelines
 1. Write your answers, whether written or computerized, and follow a proper format:
