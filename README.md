@@ -1,6 +1,8 @@
 # PLARIZA_CS4D_CS412
-SOPHIA V. PLARIZA                                                                                                        AUGUST 24,2026
+SOPHIA V. PLARIZA                                                                                                       
+AUGUST 24,2026
 CS4D
+
 Instructions
 Implement two if–then adaptive rules in code for an application of your choice (e-learning, music, e-commerce, or fitness). You may choose any programming language. Adding a User Interface (UI) is optional; a console or command-line program is fully acceptable.
 
